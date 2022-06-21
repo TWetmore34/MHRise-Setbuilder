@@ -1,0 +1,10 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+}
+
+.grid-item {
+    border: 1px solid #000;
+}
+
+

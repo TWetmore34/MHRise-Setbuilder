@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monster Hunter Rise SetBuilder</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./assets/style.css">
+    </head>
+    <header>
+       <h1>MHRise Set Maker</h1>
+       <nav>
+            <ul>
+                <li><a href="chooseArmor">Choose Armor</a></li>
+                <li>Skill Search</li>
+            </ul>
+       </nav>
+    </header>
+    <body>
+
+        
+        <section class="chooseArmor">
+            <h2>Choose Armor</h2>
+            <label for="helmets">Choose a helmet!</label>
+            <select id="helmets" name="helmets" onchange="helmet()">
+                <option value="kamuraHelm">Kamura Head Scarf S</option>
+                <option value="leatherHelm">Leather Headgear S</option>
+                <option>Chainmail Headgear S</option>
+            </select>
+
+            <br>
+
+            <label for="body">Choose a Chest Piece!</label>
+            <select id="body" name="body">
+                <option>Kamura Head Scarf S</option>
+                <option>Leather Vest S</option>
+                <option>Chainmail Vest S</option>
+            </select>
+            
+
+            <br>
+            <label for="brace">Choose a Brace!</label>
+            <select id="brace" name="brace">
+                <option>Kamura Braces S</option>
+                <option>Leather Gloves S</option>
+                <option>Chainmail Gloves S</option>
+            </select>
+            <br>
+            <label for="pants">Choose your legs!</label>
+            <select id="pants" name="pants">
+                <option>Kamura Obi S</option>
+                <option>Leather Belt S</option>
+                <option>Chainmail Belt S</option>
+            </select>
+            <br>
+            <label for="boots">Choose your boots!</label>
+            <select id="boots" name="boots">
+                <option>Kamura Leggings S</option>
+                <option>Leather Pants S</option>
+                <option>Chainmail Pants S</option>
+            </select>
+
+            <button id="button" type="button"></button>
+
+            <script>
+                
+
+                
+
+
+            </script>
+
+        </section>
+
+        <h2>Armor Stats</h2>
+        <div class="grid-container">
+            <div class="row">
+                <div class="grid-item">Armor piece</div>
+                <div id="helmName" class="grid-item output">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+            </div>
+            <div class="row">
+                <div class="grid-item">Physical</div>
+                <div class="grid-item">[defense]</div>
+                <div class="grid-item">[defense]</div>
+                <div class="grid-item">[defense]</div>
+                <div class="grid-item">[defense]</div>
+                <div class="grid-item">[defense]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div class="row">
+                <div class="grid-item">Slots</div>
+                <div class="grid-item">[slots]</div>
+                <div class="grid-item">[slots]</div>
+                <div class="grid-item">[slots]</div>
+                <div class="grid-item">[slots]</div>
+                <div class="grid-item">[slots]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div class="row">
+                <div class="grid-item">Fire</div>
+                <div class="grid-item">[Fire resist]</div>
+                <div class="grid-item">[Fire resist]</div>
+                <div class="grid-item">[Fire resist]</div>
+                <div class="grid-item">[Fire resist]</div>
+                <div class="grid-item">[Fire resist]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div class="row">
+                <div class="grid-item">Water</div>
+                <div class="grid-item">[Water Resist]</div>
+                <div class="grid-item">[Water Resist]</div>
+                <div class="grid-item">[Water Resist]</div>
+                <div class="grid-item">[Water Resist]</div>
+                <div class="grid-item">[Water Resist]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div class="row">
+                <div class="grid-item">Lightning</div>
+                <div class="grid-item">[Lightning Resist]</div>
+                <div class="grid-item">[Lightning Resist]</div>
+                <div class="grid-item">[Lightning Resist]</div>
+                <div class="grid-item">[Lightning Resist]</div>
+                <div class="grid-item">[Lightning Resist]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div>
+                <div class="grid-item">Ice</div>
+                <div class="grid-item">[Ice Resist]</div>
+                <div class="grid-item">[Ice Resist]</div>
+                <div class="grid-item">[Ice Resist]</div>
+                <div class="grid-item">[Ice Resist]</div>
+                <div class="grid-item">[Ice Resist]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+            <div>
+                <div class="grid-item">Dragon</div>
+                <div class="grid-item">[Dragon Resist]</div>
+                <div class="grid-item">[Dragon Resist]</div>
+                <div class="grid-item">[Dragon Resist]</div>
+                <div class="grid-item">[Dragon Resist]</div>
+                <div class="grid-item">[Dragon Resist]</div>
+                <div class="grid-item">[Total]</div>
+            </div>
+        </div>
+        <div>
+            <h2>Total Skills</h2>
+        </div>
+        <div class="grid-container">
+            <div class="row">
+                <div class="grid-item">Armor piece</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+                <div class="grid-item">[name]</div>
+            </div>
+            <div>
+                <div class="grid-item">Skills</div>
+                <div class="grid-item">[Skills]</div>
+                <div class="grid-item">[Skills]</div>
+                <div class="grid-item">[Skills]</div>
+                <div class="grid-item">[Skills]</div>
+                <div class="grid-item">[Skills]</div>
+            </div>
+        </div>
+
+            <script src="./assets/script.js">
+            </script>
+
+    </body>
+</html>
