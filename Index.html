@@ -23,16 +23,16 @@
             <select id="helmets" name="helmets" onchange="helmet()">
                 <option value="kamuraHelm">Kamura Head Scarf S</option>
                 <option value="leatherHelm">Leather Headgear S</option>
-                <option>Chainmail Headgear S</option>
+                <option value="chainHelm">Chainmail Headgear S</option>
             </select>
 
             <br>
 
             <label for="body">Choose a Chest Piece!</label>
-            <select id="body" name="body">
-                <option>Kamura Head Scarf S</option>
-                <option>Leather Vest S</option>
-                <option>Chainmail Vest S</option>
+            <select id="body" name="body" onchange="bodyGet()">
+                <option value="kamuraBody">Kamura Vest S</option>
+                <option value="leatherBody">Leather Vest S</option>
+                <option value="chainBody">Chainmail Vest S</option>
             </select>
             
 
@@ -59,15 +59,6 @@
             </select>
 
             <button id="button" type="button"></button>
-
-            <script>
-                
-
-                
-
-
-            </script>
-
         </section>
 
         <h2>Armor Stats</h2>
@@ -75,18 +66,18 @@
             <div class="row">
                 <div class="grid-item">Armor piece</div>
                 <div id="helmName" class="grid-item output">[name]</div>
-                <div class="grid-item">[name]</div>
+                <div id="bodyName" class="grid-item">[name]</div>
                 <div class="grid-item">[name]</div>
                 <div class="grid-item">[name]</div>
                 <div class="grid-item">[name]</div>
             </div>
             <div class="row">
                 <div class="grid-item">Physical</div>
-                <div class="grid-item">[defense]</div>
-                <div class="grid-item">[defense]</div>
-                <div class="grid-item">[defense]</div>
-                <div class="grid-item">[defense]</div>
-                <div class="grid-item">[defense]</div>
+                <div id="helmPhys" class="grid-item">[defense]</div>
+                <div id="bodyPhys" class="grid-item">[defense]</div>
+                <div id="bracePhys" class="grid-item">[defense]</div>
+                <div id="legPhys" class="grid-item">[defense]</div>
+                <div id="bootPhys" class="grid-item">[defense]</div>
                 <div class="grid-item">[Total]</div>
             </div>
             <div class="row">
