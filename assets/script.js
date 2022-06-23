@@ -177,18 +177,33 @@ function bodyGet(){
 }
 
 // Also, what if i combined some global variables + a loop to change them dependant on the inserted obj to make display a little simpler to write
-// let cell1 = "";
-// let cell2 = "";
+// Test first with just one row
+//  for loop can only access one obj at a time bc of the way variables work. This means youll need 5 for in functions, but theyll be near identical so its cool
+// ALSO you can use .join to make your arrays into strings for printing :)
+// might have to do the conversions and place into an array to access later somehow
 
-// function loop(obj) {
-//     for (prop in obj){
-//         cell1 = obj.name;
-//         cell2 = obj.skills;
-// }
 
-// }
 
-// loop()
+function row1(obj) {
+    for (prop in obj){
+        let cell1 = obj.name;
+        let cell2 = obj.defense;
+        let cell3 = obj.skills.join(" ");
+        let cell4 = obj.resist[0];
+        let cell5 = obj.resist[1];
+        let cell6 = obj.resist[2];
+        let cell7 = obj.resist[3];
+        let cell8 = obj.resist[4];
+        let cell9 = obj.slots;
+        
+        document.getElementById("helmName").innerHTML = cell1;
+        document.getElementById("helmPhys").innerHTML = cell2;
+        document.getElementById("helmSlots").innerHTML = cell9;
+        document.getElementById("helmFire").innerHTML = cell4;
+        document.getElementById('helmWater').innerHTML = cell5;
+        document.getElementById('helmLight').innerHTML = cell6;
+        document.getElementById('helmIce').innerHTML = cell7;
+        document.getElementById('helmDragon').innerHTML = cell8;
+}       
+}
 
-// console.log(cell1);
-// console.log(cell2);

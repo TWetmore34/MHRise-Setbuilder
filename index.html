@@ -20,7 +20,7 @@
         <section class="chooseArmor">
             <h2>Choose Armor</h2>
             <label for="helmets">Choose a helmet!</label>
-            <select id="helmets" name="helmets" onchange="helmet()">
+            <select id="helmets" name="helmets" onchange="row1(getHelmet())">
                 <option value="kamuraHelm">Kamura Head Scarf S</option>
                 <option value="leatherHelm">Leather Headgear S</option>
                 <option value="chainHelm">Chainmail Headgear S</option>
@@ -82,7 +82,7 @@
             </div>
             <div class="row">
                 <div class="grid-item">Slots</div>
-                <div class="grid-item">[slots]</div>
+                <div id="helmSlots" class="grid-item">[slots]</div>
                 <div class="grid-item">[slots]</div>
                 <div class="grid-item">[slots]</div>
                 <div class="grid-item">[slots]</div>
@@ -91,7 +91,7 @@
             </div>
             <div class="row">
                 <div class="grid-item">Fire</div>
-                <div class="grid-item">[Fire resist]</div>
+                <div id="helmFire" class="grid-item">[Fire resist]</div>
                 <div class="grid-item">[Fire resist]</div>
                 <div class="grid-item">[Fire resist]</div>
                 <div class="grid-item">[Fire resist]</div>
@@ -100,7 +100,7 @@
             </div>
             <div class="row">
                 <div class="grid-item">Water</div>
-                <div class="grid-item">[Water Resist]</div>
+                <div id="helmWater" class="grid-item">[Water Resist]</div>
                 <div class="grid-item">[Water Resist]</div>
                 <div class="grid-item">[Water Resist]</div>
                 <div class="grid-item">[Water Resist]</div>
@@ -109,7 +109,7 @@
             </div>
             <div class="row">
                 <div class="grid-item">Lightning</div>
-                <div class="grid-item">[Lightning Resist]</div>
+                <div id="helmLight" class="grid-item">[Lightning Resist]</div>
                 <div class="grid-item">[Lightning Resist]</div>
                 <div class="grid-item">[Lightning Resist]</div>
                 <div class="grid-item">[Lightning Resist]</div>
@@ -118,7 +118,7 @@
             </div>
             <div>
                 <div class="grid-item">Ice</div>
-                <div class="grid-item">[Ice Resist]</div>
+                <div id="helmIce" class="grid-item">[Ice Resist]</div>
                 <div class="grid-item">[Ice Resist]</div>
                 <div class="grid-item">[Ice Resist]</div>
                 <div class="grid-item">[Ice Resist]</div>
@@ -127,7 +127,7 @@
             </div>
             <div>
                 <div class="grid-item">Dragon</div>
-                <div class="grid-item">[Dragon Resist]</div>
+                <div id="helmDragon" class="grid-item">[Dragon Resist]</div>
                 <div class="grid-item">[Dragon Resist]</div>
                 <div class="grid-item">[Dragon Resist]</div>
                 <div class="grid-item">[Dragon Resist]</div>
